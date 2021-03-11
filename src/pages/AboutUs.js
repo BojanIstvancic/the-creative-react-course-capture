@@ -5,12 +5,11 @@ import FaqSection from "../components/FaqSection";
 
 const AboutUs = () => {
   return (
-    <>
+    <div>
       <AboutSection />
       <ServicesSection />
       <FaqSection />
-      {/* if we don't want a div we can create fraction <></> - it is mimicking divs */}
-    </>
+    </div>
   );
 };
 
