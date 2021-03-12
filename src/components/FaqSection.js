@@ -15,7 +15,7 @@ const FaqSection = () => {
             neque.
           </p>
         </div>
-        <div class="faq-line"></div>
+        <div className="faq-line"></div>
       </div>
       <div className="question">
         <h4>Daily Schedule</h4>
@@ -25,7 +25,7 @@ const FaqSection = () => {
             neque.
           </p>
         </div>
-        <div class="faq-line"></div>
+        <div className="faq-line"></div>
       </div>
       <div className="question">
         <h4>Different Payment Methods</h4>
@@ -35,7 +35,7 @@ const FaqSection = () => {
             neque.
           </p>
         </div>
-        <div class="faq-line"></div>
+        <div className="faq-line"></div>
       </div>
       <div className="question">
         <h4>What Products do you offer</h4>
@@ -45,7 +45,7 @@ const FaqSection = () => {
             neque.
           </p>
         </div>
-        <div class="faq-line"></div>
+        <div className="faq-line"></div>
       </div>
     </Faq>
   );
