@@ -6,9 +6,25 @@ import athlete from "../img/athlete-small.png";
 import theracer from "../img/theracer-small.png";
 import goodtimes from "../img/goodtimes-small.png";
 
+// Import Animations
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animation.js";
+
 const OurWork = () => {
   return (
-    <Work>
+    <Work
+      style={{ background: "#fff" }}
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+    >
+      {/* 
+      variants = where the definitions are comming from
+      initial = "hidden" - what happens initially - it is defined in pageAnimation
+      animate = "show" - how do we animate element - it is defined in pageAnimation
+      exit = "exit" - what happens when the component is unmounted
+     */}
       <Movie>
         <h2>The Athlete</h2>
         <div className="line"></div>
@@ -34,7 +50,7 @@ const OurWork = () => {
   );
 };
 
-const Work = styled.div`
+const Work = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden;
   padding: 5rem 10rem;
